@@ -122,12 +122,17 @@ class SignInScreen extends StatelessWidget {
                 //login button
                 Consumer<AuthController>(builder: (context, controller, _) {
                   return FilledButton(
-                    onPressed: () {
+                    onPressed: () async {
                       if (_formKey.currentState!.validate()) {
-                        controller.userSignIn(context,
-                            email: emailField.text.trimRight(),
-                            pass: passField.text.trimRight());
-                      GoRouter.of(context).goNamed(HomeScreen.id);
+                        bool? signInResult = await controller.userSignIn(
+                          context,
+                          email: emailField.text.trim(),
+                          pass: passField.text.trim(),
+                        );
+
+                        if (signInResult == true) {
+                          GoRouter.of(context).goNamed(HomeScreen.id);
+                        }
                       }
                     },
                     child: controller.isLoading
