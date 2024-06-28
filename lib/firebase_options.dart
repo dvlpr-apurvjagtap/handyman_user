@@ -47,29 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD5LG4gS7tJRtlKupyY32JwctKkoefUzTU',
-    appId: '1:220237959172:web:bcb3b15c9b4e4a67912551',
-    messagingSenderId: '220237959172',
-    projectId: 'billionworks-8cf33',
-    authDomain: 'billionworks-8cf33.firebaseapp.com',
-    storageBucket: 'billionworks-8cf33.appspot.com',
-    measurementId: 'G-0NED1F15L1',
+    apiKey: 'AIzaSyDZOlOQLSlTj4Bl7BRoOL82qqHRwjf2whQ',
+    appId: '1:263441436680:web:3d1b6cf1f23c0e5db801bd',
+    messagingSenderId: '263441436680',
+    projectId: 'billionworks-2bfbf',
+    authDomain: 'billionworks-2bfbf.firebaseapp.com',
+    storageBucket: 'billionworks-2bfbf.appspot.com',
+    measurementId: 'G-0E84KMJJFF',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD4De0_BVMfBO96F1JTXEyEfVt9WNZUjE8',
-    appId: '1:220237959172:android:459d1f409d616448912551',
-    messagingSenderId: '220237959172',
-    projectId: 'billionworks-8cf33',
-    storageBucket: 'billionworks-8cf33.appspot.com',
+    apiKey: 'AIzaSyAPhPfbVO8rq1Wis2eFsfN0YIldUIwyxKo',
+    appId: '1:263441436680:android:0af0128e0ad50f23b801bd',
+    messagingSenderId: '263441436680',
+    projectId: 'billionworks-2bfbf',
+    storageBucket: 'billionworks-2bfbf.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD1_WsJsF2BKpfdR1MiKTmmBQgpL6XaGLQ',
-    appId: '1:220237959172:ios:b01300ae10189597912551',
-    messagingSenderId: '220237959172',
-    projectId: 'billionworks-8cf33',
-    storageBucket: 'billionworks-8cf33.appspot.com',
+    apiKey: 'AIzaSyA96C0XHtRWWlKpOLoReekwP0nN0q3iRnU',
+    appId: '1:263441436680:ios:46ea29afbd51d143b801bd',
+    messagingSenderId: '263441436680',
+    projectId: 'billionworks-2bfbf',
+    storageBucket: 'billionworks-2bfbf.appspot.com',
     iosBundleId: 'com.example.handymanUser',
   );
+
 }

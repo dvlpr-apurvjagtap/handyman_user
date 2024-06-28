@@ -6,7 +6,6 @@ import 'package:handyman_user/consts/app_theme.dart';
 import 'package:handyman_user/controllers/auth_controller.dart';
 import 'package:handyman_user/controllers/booking_screen_controller.dart';
 import 'package:handyman_user/controllers/category_screen_controller.dart';
-import 'package:handyman_user/controllers/db_controller.dart';
 import 'package:handyman_user/firebase_options.dart';
 import 'package:provider/provider.dart';
 

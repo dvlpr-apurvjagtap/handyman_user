@@ -27,8 +27,7 @@ class AuthController extends ChangeNotifier {
 
       if (userData == null) {
         await _auth.signOut();
-        showCustomSnackbar(
-            context, "User not found in the customer collection!");
+        showCustomSnackbar(context, "unauthorized user!");
         return false;
       } else {
         showCustomSnackbar(context, "Login Successful");

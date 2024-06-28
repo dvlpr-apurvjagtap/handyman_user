@@ -1,0 +1,16 @@
+{
+    "image": "image",
+    "service name": "abc",
+    "category": "cleaning",
+    "address": "nashik",
+    "type": "type",
+    "status": "status",
+    "price": 500,
+    "discount": 10,
+    "duration_hour": 1,
+    "duration_min": 30,
+    "rating": 4.3,
+    "description": "",
+    "email": "xyz@gmail.com",
+    "contact_no": 1245677890
+}
