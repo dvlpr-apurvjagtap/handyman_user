@@ -13,9 +13,9 @@ import 'package:handyman_user/views/category_screen/service_filter/service_filte
 import 'package:provider/provider.dart';
 
 class CategoryDetailsScreen extends StatelessWidget {
-  CategoryDetailsScreen({super.key, this.category});
+  CategoryDetailsScreen({super.key, required this.category});
 
-  String? category;
+  String category;
 
   static String id = "CategoryDetailsScreen";
 
@@ -32,7 +32,7 @@ class CategoryDetailsScreen extends StatelessWidget {
             )),
         backgroundColor: AppColors.primary,
         title: Text(
-          category ?? "Smart Home",
+          category,
         ),
       ),
       body: Container(
@@ -47,15 +47,16 @@ class CategoryDetailsScreen extends StatelessWidget {
                     Expanded(
                       child: TextFormField(
                         decoration: InputDecoration(
-                            prefixIcon: SvgPicture.asset(
-                              AssetsUrl.search,
-                              fit: BoxFit.scaleDown,
-                            ),
-                            hintText: "Search here...",
-                            hintStyle: TextStyle(
-                              fontFamily: Typo.medium,
-                              fontSize: 12.sp,
-                            )),
+                          prefixIcon: SvgPicture.asset(
+                            AssetsUrl.search,
+                            fit: BoxFit.scaleDown,
+                          ),
+                          hintText: "Search here...",
+                          hintStyle: TextStyle(
+                            fontFamily: Typo.medium,
+                            fontSize: 12.sp,
+                          ),
+                        ),
                       ),
                     ),
                     SizedBox(

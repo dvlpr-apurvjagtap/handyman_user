@@ -32,8 +32,9 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (_) => AuthController()),
         ],
         child: MaterialApp.router(
+          themeMode: ThemeMode.dark,
           routerConfig: AppRoutes.router,
-          theme: AppTheme.theme,
+          theme: AppTheme.lightTheme,
         ),
       ),
     );

@@ -139,7 +139,8 @@ Future<void> bookingSuccessfulDialog(BuildContext context) async {
               ),
               FilledButton(
                   onPressed: () {
-                    GoRouter.of(context).pop(HomeScreen.id);
+                    Navigator.of(context).pop();
+                    GoRouter.of(context).goNamed(HomeScreen.id);
                   },
                   child: Text("Back To Home"))
             ],

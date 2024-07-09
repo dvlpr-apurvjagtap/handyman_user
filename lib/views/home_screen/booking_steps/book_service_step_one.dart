@@ -6,7 +6,7 @@ import 'package:handyman_user/consts/assets_url.dart';
 import 'package:handyman_user/consts/color_pallet.dart';
 import 'package:handyman_user/consts/spacing.dart';
 import 'package:handyman_user/consts/typography.dart';
-import 'package:handyman_user/views/home_screen/booking_service_step_two.dart';
+import 'package:handyman_user/views/home_screen/booking_steps/booking_service_step_two.dart';
 import 'package:handyman_user/views/home_screen/widget/dotted_divider.dart';
 
 class BookingStepOne extends StatelessWidget {

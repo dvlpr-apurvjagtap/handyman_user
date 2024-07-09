@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:handyman_user/consts/color_pallet.dart';
 import 'package:handyman_user/consts/typography.dart';
+import 'package:handyman_user/views/home_screen/service_detail/service_detail.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -19,6 +21,7 @@ class ChatScreen extends StatelessWidget {
           itemCount: 40,
           itemBuilder: (context, index) {
             return ListTile(
+              onTap: () {},
               leading: CircleAvatar(
                 radius: 30.r,
                 child: Text("a"),

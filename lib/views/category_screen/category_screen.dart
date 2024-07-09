@@ -12,7 +12,7 @@ import 'package:handyman_user/views/category_screen/category_detail/category_det
 class CategoryScreen extends StatelessWidget {
   CategoryScreen({super.key});
   static String id = "CategoryScreen";
-  List<Category> categories = [
+  final List<Category> categories = [
     Category(
       name: "Plumber",
       icon: AssetsUrl.plumber,

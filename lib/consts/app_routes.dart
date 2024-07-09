@@ -9,10 +9,10 @@ import 'package:handyman_user/views/category_screen/category_detail/category_det
 import 'package:handyman_user/views/category_screen/category_screen.dart';
 import 'package:handyman_user/views/category_screen/service_filter/service_filter.dart';
 import 'package:handyman_user/views/chat_screen/chat_screen.dart';
-import 'package:handyman_user/views/home_screen/book_service_step_one.dart';
-import 'package:handyman_user/views/home_screen/booking_service_step_two.dart';
+import 'package:handyman_user/views/home_screen/booking_steps/book_service_step_one.dart';
+import 'package:handyman_user/views/home_screen/booking_steps/booking_service_step_two.dart';
 import 'package:handyman_user/views/home_screen/home_screen.dart';
-import 'package:handyman_user/views/home_screen/service_detail.dart';
+import 'package:handyman_user/views/home_screen/service_detail/service_detail.dart';
 import 'package:handyman_user/views/profile_screen/change_password/change_password.dart';
 import 'package:handyman_user/views/profile_screen/edit_profile/edit_profile.dart';
 import 'package:handyman_user/views/profile_screen/profile_screen.dart';
@@ -99,7 +99,7 @@ class AppRoutes {
                 path: 'categorydetailsscreen/:category',
                 name: CategoryDetailsScreen.id,
                 builder: (context, state) => CategoryDetailsScreen(
-                  category: state.pathParameters['category'],
+                  category: state.pathParameters['category']!,
                 ),
                 routes: [
                   GoRoute(
